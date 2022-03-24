@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="CalculatorTestTestngSuite1" parallel = "methods">
+    <classes>
+      <class name="examplePackageForTestNg.CalculatorTest2"/>
+      <class name="examplePackageForTestNg.CalculatorTest"/>
+      <class name="examplePackageForTestNg.CalculatorTest3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="CalculatorTestTestngSuite2">
+    <classes>
+      <class name="examplePackageForTestNg.CalculatorTest3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="CalculatorTestTestngSuiteForGroupExample">
+    <groups>
+    	<run>
+    		<include name="AdditionTests"></include>
+    		<include name="SubstractionTests"></include>
+    	</run>
+    </groups>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->

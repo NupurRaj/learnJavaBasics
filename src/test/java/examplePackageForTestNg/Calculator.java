@@ -12,4 +12,13 @@ public class Calculator {
 		return diff;
 		}
 
+	public int mul1(int a, int b) {
+		int mult =a * b;
+		return mult;
+		}
+
+	public int div1(int a, int b) {
+		int div =a / b;
+		return div;
+		}
 }
